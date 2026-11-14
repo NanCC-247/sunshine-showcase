@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en" data-type="product" data-radius="soft" data-buttons="solid" data-motion="live">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="page-type" content="product" />
+    <meta name="site-kind" content="tech" />
+    <meta name="showcase-video-format" content="mp4" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Explore the Sunshine Smart Drying System, its scissor lift, lighting and assembly in 3D." />
+    <title>Sunshine · Smart Drying System</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 36 36'%3E%3Crect width='36' height='36' rx='7' fill='%23111111'/%3E%3Cpath d='M6 8h16m-9 2 10 16m0-16L13 26M6 28h24' fill='none' stroke='%23dddddd' stroke-width='3.2' stroke-linecap='round'/%3E%3Cpath d='M27 8h3' stroke='%23deb479' stroke-width='3.2' stroke-linecap='round'/%3E%3C/svg%3E" />
+    <link rel="stylesheet" href="./assets/taste/motion/motion.css" />
+    <script type="module" crossorigin src="./assets/index-BHIUDjEz.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-Dw6IbgeX.css">
+  </head>
+  <body data-page="showcase">
+    <header class="showroom-header" data-entrance>
+      <a class="skip-link" href="#showroom">Skip to showroom</a>
+      <a class="wordmark" href="#showroom" aria-label="Sunshine showroom">
+        <img src="./sunshine-logo.svg" width="211" height="36" alt="" />
+      </a>
+      <nav class="header-nav" aria-label="Main navigation">
+        <a class="nav-product" href="#home" lang="en">Product</a>
+        <a href="#advantages" lang="zh-CN">产品优势</a>
+        <a href="#film" lang="en">Watch film</a>
+        <button id="nav-about" type="button" aria-controls="about-panel" aria-expanded="false" lang="en">About</button>
+      </nav>
+    </header>
+    <main id="top">
+      <section id="showroom" class="showroom" data-presentation="intro" data-product-mode="live" data-media-state="poster" aria-label="Smart drying system showroom" tabindex="-1">
+        <span id="product" class="showroom-anchor" tabindex="-1"></span>
+        <span id="film" class="showroom-anchor" tabindex="-1"></span>
+        <img id="hero-model" src="./showcase-hero.webp" width="1440" height="900" alt="Gunmetal drying system with an extended scissor lift and two hanging rails." fetchpriority="high" />
+        <video id="intro-video" muted playsinline preload="metadata" aria-label="Smart Drying System teardown film"></video>
+        <div id="stage" class="hero__stage" aria-label="Interactive 3D view"></div>
+        <div class="stage-toolbar">
+          <button id="film-toggle" class="film-toggle" type="button" aria-label="Play film">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" aria-hidden="true">
+              <path class="film-play" fill="currentColor" d="M9 5.5 19 12 9 18.5z" />
+              <path class="film-pause" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M9 6v12m6-12v12" />
+              <path class="film-replay" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" d="M5 11a7 7 0 1 1 1.9 5.8M5 5v6h6" />
+            </svg>
+          </button>
+          <span class="stage-label"><span class="film-label">Watch teardown</span><span class="live-label">Interactive 3D</span></span>
+        </div>
+        <div class="product-overview">
+          <h1 id="product-title" tabindex="-1">Smart Drying<br />System.</h1>
+        </div>
+        <div class="product-description">
+          <p>See how the lift and hanging rails fit together.</p>
+          <div class="product-links">
+            <a id="know-more" class="know-more" href="#home"><span>Explore the design</span><span class="know-arrow" aria-hidden="true">→</span></a>
+            <a class="film-action" href="#film">Replay teardown</a>
+          </div>
+        </div>
+        <div class="presentation-status" aria-live="polite"><span id="phase-number">01</span><span id="phase-name">Assembled</span><span id="progress-bar" aria-hidden="true"></span></div>
+        <div class="playback-bar" data-entrance>
+          <button id="skip-intro" class="skip-intro" type="button" hidden>Skip film <span aria-hidden="true">→</span></button>
+        </div>
+        <details id="viewer-tools" class="viewer-tools">
+          <summary class="tools-trigger" lang="en">3D Controls</summary>
+          <div class="controls" aria-label="3D controls">
+            <details id="structure-panel" class="control-menu">
+              <summary class="icon-button" aria-label="Assembly and finish" title="Assembly and finish"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3 8 9-5 9 5-9 5-9-5Zm0 4 9 5 9-5M3 16l9 5 9-5"/></svg><span>Assembly</span></summary>
+              <div class="control-panel structure-panel">
+                <div class="panel-heading"><strong>Assembly</strong></div>
+                <div class="assembly-controls" role="group" aria-label="Assembly state"><button id="assemble" type="button" aria-pressed="true">Assembled</button><button id="explode" type="button" aria-pressed="false">Exploded</button></div>
+                <label class="range-label" for="explode-range">Exploded view <output id="explode-value">0%</output></label>
+                <input id="explode-range" type="range" min="0" max="1" step="0.001" value="0" aria-label="Adjust the amount of separation" />
+                <div class="panel-heading"><strong>Parts</strong></div>
+                <aside class="inspector" aria-label="Part details"><div id="part-list" class="part-list" aria-label="Select a part"></div><div class="part-detail" aria-live="polite"><h2 id="part-title">Assembled</h2><p id="part-description">See how the components fit together.</p></div></aside>
+                <div class="panel-heading"><strong>Finish</strong></div>
+                <div class="finish-options" role="group" aria-label="Choose metal finish"><button type="button" data-finish="silver" aria-pressed="false"><span class="swatch silver"></span>Silver</button><button type="button" data-finish="gunmetal" aria-pressed="true"><span class="swatch gunmetal"></span>Gunmetal</button><button type="button" data-finish="blue" aria-pressed="false"><span class="swatch blue"></span>Slate blue</button><button type="button" data-finish="warm" aria-pressed="false"><span class="swatch warm"></span>Warm titanium</button></div>
+                <div class="panel-heading"><strong>View</strong></div>
+                <div class="view-controls" role="group" aria-label="Change viewing angle"><button id="view-front" data-view="front" type="button" aria-pressed="true">Overview</button><button id="view-detail" data-view="detail" type="button" aria-pressed="false">Detail</button><button id="view-top" data-view="top" type="button" aria-pressed="false">Top</button><button id="fullscreen" type="button">Fullscreen</button></div>
+                <div class="panel-heading"><strong>Playback</strong></div>
+                <div class="view-controls" role="group" aria-label="Playback controls"><button id="replay" type="button" aria-label="Replay film">Replay film</button><button id="play-toggle" type="button" aria-label="Pause rotation" aria-pressed="false"><span data-play-label>Pause rotation</span></button></div>
+                <div class="material-panel" aria-live="polite"><span id="material-part">Assembly</span><strong id="material-grade">Aluminum and stainless steel</strong><p id="material-note">Select a part to inspect it.</p></div>
+              </div>
+            </details>
+            <details id="lift-panel" class="control-menu">
+              <summary class="icon-button" aria-label="Lift controls" title="Lift controls"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2v20M6 8l6-6 6 6M6 16l6 6 6-6"/></svg><span>Lift</span></summary>
+              <div class="control-panel compact-panel"><div class="panel-heading"><strong>Lift</strong></div><div class="lift-control" role="group" aria-label="Adjust rack height"><button id="lift-up" type="button">Raise</button><button id="lift-stop" type="button">Stop</button><button id="lift-down" type="button">Lower</button></div><span id="lift-hint" role="status" aria-live="polite"></span></div>
+            </details>
+            <details id="light-panel" class="control-menu">
+              <summary class="icon-button" aria-label="Light controls" title="Light controls"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18h6M9 21h6M8 15c-.6-1.2-2.5-2.5-2.5-5a6.5 6.5 0 0 1 13 0c0 2.5-1.9 3.8-2.5 5-.3.6-.4 1.3-.4 1.5H8.4c0-.2-.1-.9-.4-1.5Z"/></svg><span>Light</span></summary>
+              <div class="control-panel compact-panel"><label class="range-label" for="light-range">Brightness <output id="light-value" for="light-range">70%</output></label><input id="light-range" type="range" min="0" max="100" step="1" value="70" aria-label="Adjust light brightness" /></div>
+            </details>
+          </div>
+        </details>
+        <div id="loading" class="loading-state" role="status"><span class="loading-orbit" aria-hidden="true"></span><span>Loading the model</span><span id="loading-progress">0%</span></div>
+        <div id="video-loading" class="loading-state" role="status" hidden>Preparing the 3D view</div>
+        <div id="render-error" class="render-error" role="alert" hidden><img id="fallback-poster" alt="Smart drying system preview" /><span>Static preview</span><p>The 3D view could not load.</p><button id="retry-render" type="button">Reload 3D view</button></div>
+      </section>
+      <div id="home" hidden>
+        <section class="product-home" aria-labelledby="home-title" lang="zh-CN">
+          <div class="home-photo">
+            <img class="home-image" src="./sunshine-family-hero.webp" width="1920" height="1280" decoding="async" loading="lazy" alt="妈妈和孩子在客厅整理换洗的衣服。" />
+          </div>
+          <div class="home-copy">
+            <p class="product-kicker">智享阳光智能晾晒机</p>
+            <h1 id="home-title" tabindex="-1">把晾晒调到<br /><span>顺手的高度</span></h1>
+            <p>让一家人挂衣、收衣都少往高处伸手。</p>
+            <div class="home-actions">
+              <a class="product-cta" href="#families">查看家庭场景 <span aria-hidden="true">↓</span></a>
+              <a class="product-text-link" href="#product">体验三维 <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+        </section>
+        <div class="home-intro" lang="zh-CN">
+          <div class="home-intro-brand">
+            <img src="./sunshine-logo.svg" width="211" height="36" alt="SUNSHINE" />
+          </div>
+          <div class="home-intro-copy">
+            <p class="home-intro-title">从宝宝的小衣物，到长辈的日常换洗</p>
+            <p>晾衣杆可升降。从照顾宝宝的新手妈妈，到独自在家的长辈，都可以把晾衣杆降到自己顺手的高度。</p>
+          </div>
+        </div>
+        <section id="families" class="scene-chapter scene-maternal" aria-labelledby="families-title" tabindex="-1" lang="zh-CN">
+          <div class="scene-copy">
+            <p class="scene-label">关爱母婴</p>
+            <h2 id="families-title">宝宝的小衣服，<br />伸手就能晾</h2>
+            <p>宝宝的衣物换得勤。新手妈妈腰背酸痛时，反复踮脚、抬手晾衣更吃力。把晾衣杆降到顺手的高度，挂衣、收衣时都可以少往高处伸手。</p>
+          </div>
+          <div class="scene-image">
+            <img src="./sunshine-maternal.webp" width="1200" height="1800" decoding="async" loading="lazy" alt="妈妈抱着宝宝，在洗衣机旁整理衣物。" />
+          </div>
+        </section>
+        <section id="inclusion" class="scene-chapter scene-inclusion" aria-labelledby="inclusion-title" tabindex="-1" lang="zh-CN">
+          <div class="scene-copy">
+            <p class="scene-label">智能家居普惠</p>
+            <h2 id="inclusion-title">普通家庭也能<br />用上智能晾晒</h2>
+            <p>响应国家推动智能家居走进普通家庭的倡议，从每天都要做的晾晒入手，把升降操作做简单，让清洁和维护更方便。</p>
+            <a class="scene-source" href="https://www.mofcom.gov.cn/xwfb/sjfzrfb/art/2026/art_73bcf2958e424c238054ddec9edccab8.html" target="_blank" rel="noopener noreferrer">商务部政策解读 <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="scene-image">
+            <img src="./sunshine-inclusion.webp" width="1200" height="800" decoding="async" loading="lazy" alt="两位家庭成员在家中一起把衣物放进洗衣机。" />
+          </div>
+        </section>
+        <section id="community" class="scene-chapter scene-community" aria-labelledby="community-title" tabindex="-1" lang="zh-CN">
+          <div class="scene-copy">
+            <p class="scene-label">乡村振兴与社区助老</p>
+            <h2 id="community-title">一个人在家，<br />也能顺手晾衣</h2>
+            <p>面向乡村和社区的独居老人、行动不便的居民及需要帮扶的家庭。把晾衣杆降到容易够到的位置，挂衣、收衣时少些踮脚，少往高处伸手。</p>
+          </div>
+          <div class="scene-image">
+            <img src="./sunshine-elder-laundry.webp" width="1200" height="801" decoding="async" loading="lazy" alt="一位年长女性在自家庭院的晾衣架旁挂衣服。" />
+          </div>
+        </section>
+        <section id="advantages" class="product-advantages" aria-labelledby="advantages-title" tabindex="-1" lang="zh-CN">
+          <div class="product-section-heading">
+            <p class="product-kicker" lang="en">Product Technology</p>
+            <h2 id="advantages-title">产品核心优势</h2>
+          </div>
+          <div class="feature-tabs" data-tabs>
+            <div class="feature-tab-list" role="tablist" aria-label="产品核心优势">
+              <button id="feature-fallback-tab" type="button" role="tab" aria-selected="true" aria-controls="feature-fallback">故障降级运行</button>
+              <button id="feature-humidity-tab" type="button" role="tab" aria-selected="false" aria-controls="feature-humidity" tabindex="-1">湿度闭环杀菌</button>
+              <button id="feature-service-tab" type="button" role="tab" aria-selected="false" aria-controls="feature-service" tabindex="-1">快拆模块化维护</button>
+            </div>
+            <article id="feature-fallback" class="feature-panel" role="tabpanel" aria-labelledby="feature-fallback-tab" tabindex="0">
+              <div class="feature-copy">
+                <h3>局部故障，<br />基础晾晒照常</h3>
+                <p>烘干、杀菌或风机异常时，系统自动停用故障模块，保留基础晾晒功能，避免单个模块异常导致整机停机。</p>
+              </div>
+              <img src="./sunshine-feature-fallback.webp" width="1216" height="760" decoding="async" loading="lazy" alt="主机与晾衣架完整装配的三维画面。" />
+            </article>
+            <article id="feature-humidity" class="feature-panel" role="tabpanel" aria-labelledby="feature-humidity-tab" tabindex="0" hidden>
+              <div class="feature-copy">
+                <h3>根据湿度，<br />切换运行阶段</h3>
+                <p>系统根据舱内湿度的变化，动态切换去水、杀菌和排味阶段，减少无效杀菌和过度烘干。</p>
+                <ol class="feature-stages" aria-label="运行阶段"><li>去水</li><li>杀菌</li><li>排味</li></ol>
+              </div>
+              <img src="./sunshine-feature-humidity.webp" width="1216" height="760" decoding="async" loading="lazy" alt="晾晒机主机内部与控制板的三维近景。" />
+            </article>
+            <article id="feature-service" class="feature-panel" role="tabpanel" aria-labelledby="feature-service-tab" tabindex="0" hidden>
+              <div class="feature-copy">
+                <h3>易识别，<br />也容易拆换</h3>
+                <p>杀菌模块和过滤件等采用易识别的快拆结构，让母婴家庭更容易取下、清洁和更换部件。</p>
+              </div>
+              <img src="./sunshine-feature-service.webp" width="1216" height="760" decoding="async" loading="lazy" alt="主机、升降机构和晾杆分开的三维拆解图。" />
+            </article>
+          </div>
+          <p class="product-status">概念方案 · 功能表现以实物验证为准</p>
+        </section>
+      <section id="product-details" class="product-details" aria-labelledby="details-title" tabindex="-1" lang="zh-CN">
+        <div class="details-copy">
+          <h2 id="details-title">整机结构</h2>
+          <dl class="details-list">
+            <div id="housing" tabindex="-1"><dt>固定主机</dt><dd>主机内设控制板与 LED 灯带。</dd></div>
+            <div id="lift" tabindex="-1"><dt>剪叉升降</dt><dd>剪叉机构带动晾架在固定主机下方升降。</dd></div>
+            <div id="rails" tabindex="-1"><dt>双晾杆</dt><dd>两条带挂孔的晾杆位于两侧把手之间。</dd></div>
+          </dl>
+          <a id="explore-details" class="details-action" href="#product">查看三维拆解 <span aria-hidden="true">↗</span></a>
+          <br /><a class="back-to-product" href="#home">↑ 返回产品首页</a>
+        </div>
+        <img class="details-image" src="./showcase-structure.webp" width="1440" height="900" loading="lazy" decoding="async" alt="整机拆解图，展示剪叉臂、销轴、垫圈和控制板。" />
+      </section>
+      <footer class="product-footer" lang="zh-CN">
+        <span>© SUNSHINE</span>
+        <p>示意场景摄影 <a href="https://www.pexels.com/photo/mother-and-daughter-folding-laundry-10557078/" target="_blank" rel="noopener noreferrer">Ron Lach</a> · <a href="https://www.pexels.com/photo/a-mother-taking-care-of-her-baby-7678215/" target="_blank" rel="noopener noreferrer">PNW Production</a> · <a href="https://www.pexels.com/photo/man-loading-clothes-in-a-washing-machine-while-woman-is-holding-a-laundry-basket-5591840/" target="_blank" rel="noopener noreferrer">RDNE Stock project</a> · <a href="https://www.pexels.com/photo/vietnamese-woman-hanging-laundry-outdoors-in-spring-36713993/" target="_blank" rel="noopener noreferrer">Vitaly Gariev</a> / Pexels</p>
+      </footer>
+      </div>
+    </main>
+    <div id="about-panel" class="about-panel" role="dialog" aria-modal="false" aria-labelledby="about-title" hidden><button id="about-close" class="about-close" type="button" aria-label="Close">×</button><h2 id="about-title">Sunshine</h2><p>A 3D concept demo of the Smart Drying System.</p><p>Concept only. Physical performance has yet to be tested.</p></div>
+    <noscript><div class="noscript-note">Enable JavaScript to rotate the 3D model and inspect its parts.</div></noscript>
+  </body>
+</html>

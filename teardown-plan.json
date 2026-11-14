@@ -1,0 +1,242 @@
+{
+  "schemaVersion": 2,
+  "concept": true,
+  "coordinateSystem": {
+    "units": "concept-units",
+    "x": "width",
+    "y": "up",
+    "z": "depth, positive toward the front",
+    "origin": "center of the base footprint at floor level"
+  },
+  "dimensions": {
+    "baseWidth": 8,
+    "baseDepth": 3,
+    "frameY": 1,
+    "platformWidth": 5.4,
+    "platformDepth": 1.65,
+    "platformY": 3.25,
+    "scissorOffsetX": 2.1,
+    "railY": 0.24
+  },
+  "groups": [
+    {
+      "id": "platform",
+      "name": "顶部主机外壳",
+      "shortName": "主机",
+      "description": "现有外壳与开孔上盖分层展示。哑光涂层呈现家电质感；内部组件及净护效果仍待验证。",
+      "explosion": [
+        0,
+        2.36,
+        0
+      ],
+      "anchor": [
+        0,
+        3.25,
+        0
+      ],
+      "section": "薄板，保留成组通孔和外围整边",
+      "sectionEstimate": {
+        "depth": 1.65,
+        "thickness": 0.16
+      },
+      "window": [
+        0.08,
+        0.48
+      ],
+      "subparts": {
+        "cover": {
+          "explosion": [
+            0,
+            3.05,
+            0
+          ],
+          "window": [
+            0,
+            0.46
+          ]
+        }
+      }
+    },
+    {
+      "id": "scissors",
+      "name": "双侧剪叉支撑",
+      "shortName": "剪叉",
+      "description": "两侧交叉连杆连接主机和晾架；探索低位挂取，实际升降、防夹与防坠仍需验证。",
+      "explosion": [
+        0.62,
+        1.55,
+        0
+      ],
+      "mirrorAxis": "x",
+      "anchor": [
+        2.05,
+        2.1,
+        0
+      ],
+      "section": "并列的剪叉平面，交叉处共享转轴中心",
+      "sectionEstimate": {
+        "linkHeight": 0.28,
+        "linkDepth": 0.18
+      },
+      "window": [
+        0.2,
+        0.7
+      ],
+      "subparts": {
+        "left": {
+          "waypoint": [
+            0,
+            1.55,
+            0
+          ],
+          "corner": 0.68
+        },
+        "right": {
+          "waypoint": [
+            0,
+            1.55,
+            0
+          ],
+          "corner": 0.68
+        }
+      }
+    },
+    {
+      "id": "pivots",
+      "name": "转轴与连接件",
+      "shortName": "转轴",
+      "description": "连接轴与连杆孔位同源建模；受力、磨损和防松方式需在工程设计阶段验证。",
+      "explosion": [
+        1.62,
+        1.55,
+        0
+      ],
+      "mirrorAxis": "x",
+      "anchor": [
+        2.05,
+        2.05,
+        0.46
+      ],
+      "section": "销与外露轴头，共享连杆连接中心",
+      "sectionEstimate": {
+        "pinRadius": 0.11,
+        "headRadius": 0.16
+      },
+      "window": [
+        0.2,
+        0.7
+      ],
+      "subparts": {
+        "left": {
+          "waypoint": [
+            0,
+            1.55,
+            0
+          ],
+          "corner": 0.68
+        },
+        "right": {
+          "waypoint": [
+            0,
+            1.55,
+            0
+          ],
+          "corner": 0.68
+        }
+      }
+    },
+    {
+      "id": "frame",
+      "name": "下方矩形晾架",
+      "shortName": "晾架",
+      "description": "保留参考图中的矩形周框与横向连接；承载能力、安装空间与取衣便利性待验证。",
+      "explosion": [
+        0,
+        0,
+        0
+      ],
+      "anchor": [
+        -2.6,
+        0.9,
+        1.32
+      ],
+      "section": "开口矩形周框，保留中部空隙和近地基准",
+      "sectionEstimate": {
+        "memberWidth": 0.22,
+        "memberHeight": 0.25
+      }
+    },
+    {
+      "id": "handles",
+      "name": "两侧延伸杆",
+      "shortName": "延伸杆",
+      "description": "参考图两端延伸的管状结构；挂晒用途、伸出方式与收纳操作仍需验证。",
+      "explosion": [
+        0.85,
+        0,
+        0
+      ],
+      "mirrorAxis": "x",
+      "anchor": [
+        4.65,
+        0.9,
+        0
+      ],
+      "section": "折弯抓握外形，端部贴合支撑件",
+      "sectionEstimate": {
+        "tubeRadius": 0.075
+      },
+      "window": [
+        0.05,
+        0.38
+      ]
+    },
+    {
+      "id": "rails",
+      "name": "带孔晾杆",
+      "shortName": "晾杆",
+      "description": "两根晾杆保留真实通孔；用于说明挂晒位置，孔数、间距和承重尚未定稿。",
+      "explosion": [
+        0,
+        0,
+        1.85
+      ],
+      "mirrorAxis": "z",
+      "anchor": [
+        0.4,
+        0.2,
+        1.24
+      ],
+      "section": "平行纵向构件，滑块和限位细节未定义",
+      "sectionEstimate": {
+        "memberWidth": 0.18,
+        "memberHeight": 0.14
+      },
+      "window": [
+        0.08,
+        0.65
+      ],
+      "subparts": {
+        "rear": {
+          "explosion": [
+            0,
+            1.05,
+            -1.55
+          ],
+          "waypoint": [
+            0,
+            0,
+            -1.55
+          ],
+          "corner": 0.48,
+          "window": [
+            0.08,
+            0.9
+          ]
+        }
+      }
+    }
+  ],
+  "projectName": "智享阳光净护智能晾晒机",
+  "layoutNote": "分解展示保持原组装几何。后晾杆先向后退出再抬高；剪叉先抬高再向外分离。销轴仅作概念分组展示，非真实拆卸指导。"
+}
